@@ -1,0 +1,109 @@
+.App {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+}
+
+.floating-button {
+  display: flex;
+  width: 6vh;
+  height: 6vh;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: gray;
+  padding: 10px;
+  border: 0;
+  bottom: 40px;
+  right: 40px;
+  box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.3);
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.floating-button > p {
+  font-size: 2vh;
+}
+
+.chat-box {
+  max-width: 80vw;
+  width: 40vw;
+  min-width: 350px;
+  height: 60vh;
+  max-height: 80vh;
+  background-color: white;
+  margin-bottom: 1vh;
+  border-radius: 20px;
+  border-start-start-radius: 3vh;
+  padding: 3%;
+  box-sizing: border-box;
+  background-color: gray;
+}
+
+.message-history {
+  height: 80%;
+  overflow: auto;
+}
+
+.message-history > ul {
+  padding: 0 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style-type: none;
+}
+
+.message-tools {
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.message-tools > input[type='text'] {
+  height: 100%;
+  width: 100%;
+  border-radius: 2vh;
+  border-start-end-radius: 0;
+}
+
+.message-tools > input[type='submit'] {
+  border-radius: 5%;
+  width: 10vh;
+  height: 10vh;
+  border: 0;
+}
+
+.message {
+  margin-bottom: 0.5em;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-color: aqua;
+  border-width: 10px;
+  padding: 1em;
+  border-radius: 0.5em;
+  max-width: 60%;
+}
+
+.message > p {
+  margin: 0
+}
+
+.message > .time {
+  font-style: italic;
+  font-size: small;
+}
+
+.message > h4 {
+  font-size: 0.8em;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0%;
+}
+
+.my.message {
+  align-self: flex-end;
+}
